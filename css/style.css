@@ -10,6 +10,10 @@ button{
     border: 0;
 }
 
+.flex{
+    display: flex;
+}
+
 /* parte header */
 
 header{
@@ -70,26 +74,23 @@ header>div:last-child{
     width: 50%;
     margin: 3rem auto;
     text-align: center;
+    color: white;
 }
 
 div>h1{
-    color: white;
-    margin-bottom: 1.5rem;
-}
-
-div>p{
-    color: white;
     margin-bottom: 1.5rem;
 }
 
 #mac-download{
     background-color: white;
     color: black;
+    margin: 1.5rem;
 }
 
 #open-in-browser{
     background-color: black;
     color: white;
+    margin: 1.5rem;
 }
 
 /* parte main con le varie descrizioni */
@@ -99,7 +100,10 @@ div>p{
     height: 22rem;
     align-items: center;
     margin: 0 auto;
-    display: flex;
+}
+
+div>h2{
+    margin-bottom: 1rem;
 }
 
 main>div:nth-child(2),
@@ -107,33 +111,70 @@ main>div:last-child{
     background-color: lightgray;
 }
 
+.flex>.description{
+    flex-direction: row-reverse;
+}
+
 .photo{
-    background-color: rgb(29, 173, 251);
+    background-size: cover;
     width: 60%;
     height: 85%;
-    border: 1px dashed black;
+}
+
+.photo1{
+    background-image: url(../img/item1.svg);
+}
+
+.photo2{
+    background-image: url(../img/item2.svg);
+}
+
+.photo3{
+    background-image: url(../img/item3.svg);
 }
 
 .text{
-    background-color: pink;
     width: 40%;
     height: 85%;
-    border: 1px dashed black;
+    color: black;
+    padding-left: 6rem;
+    padding-top: 1rem;
 }
 
 .final-description-container{
     width: 65%;
-    height: 40rem;
+    height: 50rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
+
 }
 
 .final-description{
-    background-color: green;
     height: 90%;
     width: 100%;
-    border: 2px dashed black;
+    text-align: center;
+}
+
+.final-description>img{
+    max-width: 100%;
+}
+
+#adventure{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+}
+
+.final-description>button{
+    background-color: rgb(135, 135, 252);
+    color: white;
 }
 
 /* parte footer */
