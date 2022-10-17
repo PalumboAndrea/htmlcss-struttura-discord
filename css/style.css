@@ -9,7 +9,7 @@
 header{
     height: 25rem;
     width: 100%;
-    background-color: blue;
+    background-color: darkblue;
     display: flex;
     flex-direction: column;
 }
@@ -19,13 +19,15 @@ header{
 #nav-container{
     background-color: aqua;
     height: 15%;
-    padding: 1rem 12rem;
+    display: flex;
 }
 
 .nav{
-    height: 100%;
+    height: 65%;
     background-color: orange;
     display: flex;
+    width: 65%;
+    margin: auto;
 }
 
 #logo, #login{
@@ -65,7 +67,48 @@ header>div:last-child{
     margin: 2rem auto;
 }
 
+/* parte main con le varie descrizioni */
 
+.description{
+    width: 65%;
+    height: 22rem;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
 
+main>div:nth-child(2),
+main>div:last-child{
+    background-color: lightgray;
+}
+
+.photo{
+    background-color: rgb(29, 173, 251);
+    width: 60%;
+    height: 85%;
+    border: 1px dashed black;
+}
+
+.text{
+    background-color: pink;
+    width: 40%;
+    height: 85%;
+    border: 1px dashed black;
+}
+
+.final-description-container{
+    width: 65%;
+    height: 40rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.final-description{
+    background-color: green;
+    height: 90%;
+    width: 100%;
+    border: 2px dashed black;
+}
 
 
