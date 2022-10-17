@@ -1,8 +1,12 @@
+body{
+    min-width: 55rem;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka';
+    font-family: sans-serif;
 }
 
 button{
@@ -13,12 +17,13 @@ button{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* parte header */
 
 header{
-    height: 25rem;
+    height: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,6 +36,7 @@ header{
 #nav-container{
     height: 15%;
     display: flex;
+    margin-top: 1rem;
 }
 
 .nav{
@@ -39,6 +45,7 @@ header{
     width: 70%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 #login{
@@ -52,11 +59,15 @@ header{
     align-items: center;
 }
 
+.upper-link>a{
+    font-size: 0.8rem;
+}
+
 /* parte header con frase motivazionale e link per scaricare */
 
 header>div:last-child{
     height: 75%;
-    width: 50%;
+    width: 45%;
     margin: 3rem auto;
     text-align: center;
     color: white;
@@ -70,30 +81,40 @@ div>h1{
     background-color: white;
     color: black;
     margin: 1.5rem;
+    padding: 0.8rem;
 }
 
 #open-in-browser{
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     color: white;
     margin: 1.5rem;
+    padding: 0.8rem;
 }
 
 /* parte main con le varie descrizioni */
 
+.waves{
+    width: 100%;
+    height: 5rem;
+    background-image: url(../img/wave.svg);
+    filter: grayscale(100%);
+}
+
 .description{
-    width: 65%;
-    height: 22rem;
+    width: 70%;
+    height: 30rem;
     align-items: center;
     margin: 0 auto;
 }
 
 div>h2{
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-main>div:nth-child(2),
+main>div:nth-child(3),
 main>div:last-child{
-    background-color: lightgray;
+    background-color: rgb(244, 244, 244);
 }
 
 .flex>.description{
@@ -101,7 +122,8 @@ main>div:last-child{
 }
 
 .photo{
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 60%;
     height: 85%;
 }
@@ -122,21 +144,18 @@ main>div:last-child{
     width: 40%;
     height: 85%;
     color: black;
-    padding-left: 6rem;
-    padding-top: 1rem;
+    padding: 2rem 3rem;
 }
 
 .final-description-container{
-    width: 65%;
-    height: 50rem;
+    width: 60%;
+    padding: 5rem 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
-
 }
 
 .final-description{
-    height: 90%;
     width: 100%;
     text-align: center;
 }
@@ -165,26 +184,27 @@ main>div:last-child{
 /* parte footer */
 
 footer{
-    background-color: rgb(52, 52, 52);
-    height: 35rem;
+    background-color: rgb(27, 29, 32);
     width: 100%;
-    padding-top: 3rem;
+    height: 50%;
 }
 
-#legenda{
-    height: 80%;
+.legenda{
     width: 65%;
-    display: flex;
     margin: auto;
+    padding: 2rem 0;
+    flex-wrap: wrap;
 }
 
 #social{
     height: 100%;
     width: 30%;
+    padding-right: 3rem;
 }
 
-#social>h4{
-    font-size: 1.5rem;
+#social>p{
+    font-size: 1.4rem;
+    font-weight: bold;
     color: rgb(135, 135, 252);
     margin-bottom: 1.8rem;
 }
@@ -208,17 +228,17 @@ a{
 
 .link{
     height: 100%;
-    width: calc(70% / 4);
-    display: flex;
+    min-width: calc(70% / 4);
     flex-direction: column;
 }
 
-.link>span{
+.link>p{
     color: rgb(135, 135, 252);
 }
 
-.link>a{
-    margin-top: 0.6rem;
+.link>a, .link>p{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
 }
 
 hr{
@@ -229,13 +249,12 @@ hr{
 
 footer>div:last-child{
     width: 65%;
-    height: 2rem;
-    margin: 1rem auto;
+    margin: auto;
+    padding: 2rem 0;
     justify-content: space-between;
 }
 
 #registration{
-    justify-self: stretch;
     background-color: rgb(135, 135, 252);
     color: white;
 }
