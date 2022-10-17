@@ -4,53 +4,60 @@
     box-sizing: border-box;
 }
 
+button{
+    border-radius: 2rem;
+    padding: 0.6rem;
+    border: 0;
+}
+
 /* parte header */
 
 header{
     height: 25rem;
     width: 100%;
-    background-color: darkblue;
     display: flex;
     flex-direction: column;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 /* container con logo, link e login */
 
 #nav-container{
-    background-color: aqua;
     height: 15%;
     display: flex;
 }
 
 .nav{
     height: 65%;
-    background-color: orange;
     display: flex;
-    width: 65%;
+    width: 70%;
     margin: auto;
 }
 
 #logo, #login{
     height: 100%;
-    width: 25%;
-    border: 1px dashed black;
     display: flex;
     align-items: center;
     padding: 0.6rem;
 }
 
 #logo{
+    width: 25%;
     justify-content: flex-start;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
 }
 
 #login{
-    justify-content: end;
+    justify-content: flex-end;
+    background-color: white;
 }
 
 #upper-link{
     width: 50%;
     height: 100%;
-    border: 1px dashed black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,10 +68,28 @@ header{
 header>div:last-child{
     height: 75%;
     width: 50%;
-    background-color: rgb(250, 118, 255);
-    border: 2px dashed black;
-    border-radius: 6px;
-    margin: 2rem auto;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+div>h1{
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+div>p{
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#mac-download{
+    background-color: white;
+    color: black;
+}
+
+#open-in-browser{
+    background-color: black;
+    color: white;
 }
 
 /* parte main con le varie descrizioni */
@@ -129,7 +154,7 @@ footer{
 
 #social{
     height: 100%;
-    width: 32%;
+    width: 30%;
     background-color: red;
     border-radius: 4px;
     border: 2px dashed black;
@@ -137,7 +162,7 @@ footer{
 
 .link{
     height: 100%;
-    width: 12%;
+    width: calc(70% / 4);
     background-color: aqua;
     border: 2px dashed white;
 }
@@ -147,3 +172,9 @@ hr{
     margin: 2rem 0;
 }
 
+footer>div:last-child{
+    width: 65%;
+    height: 4rem;
+    background-color: aqua;
+    margin: auto;
+}
