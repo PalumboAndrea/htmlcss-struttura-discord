@@ -47,7 +47,7 @@ header{
     justify-content: end;
 }
 
-#link{
+#upper-link{
     width: 50%;
     height: 100%;
     border: 1px dashed black;
@@ -111,4 +111,39 @@ main>div:last-child{
     border: 2px dashed black;
 }
 
+/* parte footer */
+
+footer{
+    background-color: rgb(52, 52, 52);
+    height: 50rem;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#legenda{
+    height: 50%;
+    width: 65%;
+    display: flex;
+    margin: auto;
+}
+
+#social{
+    height: 100%;
+    width: 32%;
+    background-color: red;
+    border-radius: 4px;
+    border: 2px dashed black;
+}
+
+.link{
+    height: 100%;
+    width: 12%;
+    background-color: aqua;
+    border: 2px dashed white;
+}
+
+hr{
+    background-color: white;
+    margin: 2rem 0;
+}
 
