@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* parte header */
+
+header{
+    height: 25rem;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+/* container con logo, link e login */
+
+#nav-container{
+    background-color: aqua;
+    height: 15%;
+    padding: 1rem 12rem;
+}
+
+.nav{
+    height: 100%;
+    background-color: orange;
+    display: flex;
+}
+
+#logo, #login{
+    height: 100%;
+    width: 25%;
+    border: 1px dashed black;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+#logo{
+    justify-content: flex-start;
+}
+
+#login{
+    justify-content: end;
+}
+
+#link{
+    width: 50%;
+    height: 100%;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* parte header con frase motivazionale e link per scaricare */
+
+header>div:last-child{
+    height: 75%;
+    width: 50%;
+    background-color: rgb(250, 118, 255);
+    border: 2px dashed black;
+    border-radius: 6px;
+    margin: 2rem auto;
+}
+
+
+
+
+
