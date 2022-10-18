@@ -1,3 +1,5 @@
+/* tag generali e che riguardano tutta la struttura */
+
 body{
     min-width: 55rem;
 }
@@ -23,7 +25,7 @@ button{
 /* parte header */
 
 header{
-    height: 10%;
+    height: 30rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,6 +50,7 @@ header{
     align-items: center;
 }
 
+
 #login{
     justify-content: flex-end;
     background-color: white;
@@ -68,7 +71,7 @@ header{
 header>div:last-child{
     height: 75%;
     width: 45%;
-    margin: 3rem auto;
+    margin: 5rem auto;
     text-align: center;
     color: white;
 }
@@ -148,7 +151,7 @@ main>div:last-child{
 }
 
 .final-description-container{
-    width: 60%;
+    width: 70%;
     padding: 5rem 0;
     margin: 0 auto;
     display: flex;
@@ -202,7 +205,7 @@ footer{
     padding-right: 3rem;
 }
 
-#social>p{
+#social>p:first-child{
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(135, 135, 252);
@@ -213,10 +216,16 @@ footer{
     max-height: 0.8rem;
 }
 
-#social>span{
+#language{
     color: white;
     font-size: 0.6rem;
-    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+#language>span{
+    font-weight: bold;
+
 }
 
 a{
